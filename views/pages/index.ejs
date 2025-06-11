@@ -1,56 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<%= include('../partials/head') %>  <!-- Inclui o head.ejs -->
+<%- include('../partials/head') %>
 
-<body>
+    <body>
 
-    <%= include ../partials/header %>
+        <%- include('../partials/header') %>
 
-    <content>
-        <div id="content_banner">
-            <img src="/public/imagens/img/foto1-burguer.png" alt="banner_burguer" id="content_banner_img">
-        </div>    
-    </content>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <link rel="stylesheet" href="./main.js">
-</body>
+            <main>
+                <div id="content_banner">
+                    <img src="/imagens/img/foto1-burguer.png" alt="banner_burguer" id="content_banner_img">
+                </div>
+            </main>
+            <script src="/js/main.js"> </script>
+    </body>
 
 </html>
