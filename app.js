@@ -1,4 +1,6 @@
 const express = require('express');
+const req = require('express/lib/request');
+const res = require('express/lib/response');
 const path = require('path');
 
 const app = express();
@@ -29,7 +31,14 @@ app.get('/register', (req, res) => {
   res.render('pages/register');
 });
 
+app.get('/teste', (req, res) => {
+  res.render('pages/teste');
+});
+
+
+
 // Inicia o servidor
 app.listen(3000, () => {
-  console.log('Servidor rodando na porta 3000');
+  console.log('Servidor rodando no link localhost:3000');
 });
+
