@@ -18,23 +18,30 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Rota para a página inicial
 app.get('/', (req, res) => {
-  res.render('pages/index');
+  res.render('pages/index', {
+    bodyClass: 'home-page'
+  });
 });
 
 // Rota para a página de login
 app.get('/login', (req, res) => {
-  res.render('pages/login');
+  res.render('pages/login', {
+    bodyClass: 'login-page'
+  });
 });
 
 // Rota para a página de registro
 app.get('/register', (req, res) => {
-  res.render('pages/register');
+  res.render('pages/register', {
+    bodyClass: 'register-page'
+  });
 });
 
 app.get('/teste', (req, res) => {
-  res.render('pages/teste');
+  res.render('pages/teste', {
+    bodyClass: 'teste-page'
+  });
 });
-
 
 
 // Inicia o servidor

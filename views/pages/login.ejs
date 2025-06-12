@@ -3,19 +3,35 @@
 
 <%- include('../partials/head') %>
 
-    <body>
 
-        <%- include('../partials/header') %>
+    <main>
+        <div id="container-auth">
+            <div id="container-left">
+                <img src="imagens/img/foto-lado.png" alt="Foto do espaço da lancheria" id="container-left-img" />
+                <img src="imagens/img/logo.png" alt="Logo Tabloid" id="container-auth-logoOverlay">
+            </div>
 
-            <main>
-                <div id="content_banner">
-                    <img src="/imagens/img/foto1-burguer.png" alt="banner_burguer" id="content_banner_img">
+            <div id="container-right">
+                <div id="container-login-form">
+                    <h2 id="login-form-h2">Sentimos sua falta...</h2>
+                    <p>Faça login:</p>
+                    <form>
+                        <label for="cpf">CPF ou E-mail:</label>
+                        <input type="text" id="cpf" name="cpf" />
+
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" name="senha" />
+
+                        <button type="submit">Login</button>
+                        <p class="register-link">Não é cadastrado? <a href="#">Cadastre-se.</a></p>
+                    </form>
                 </div>
-            </main>
-            <script src="/js/main.js"> </script>
+                <img src="imagens/img/logo.png" alt="Logo Tabloid" id="container-auth-logoOverlay">
+            </div>
+        </div>
+    </main>
+    <script src="/js/main.js"> </script>
 
-        <%- include('../partials/footer') %>
-
-    </body>
+    <%- include('../partials/footer') %>
 
 </html>

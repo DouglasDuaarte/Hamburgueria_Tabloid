@@ -1,21 +1,41 @@
-body {
+:root {
+    --laranja-primario: #DD7B02;
+    --branco: white;
+    --cinza-principal: #23282B;
+}
+
+
+body.home-page {
 
     display: flex;
     flex-direction: column;
-    height: fit-content;
+    height: auto;
     width: 1400px;
     border: 1px solid rgb(5, 5, 5);
     margin: 0 auto;
-    background-image: url(./imagens/img/pexels-elina-araja-1743227-3377405\ 1.png);
+    background-image: url(/imagens/img/pexels-elina-araja-1743227-3377405\ 1.png);
 
     
+}
+
+body.login-page {
+
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 1400px;
+    border: 1px solid rgb(5, 5, 5);
+    margin: 0 auto;
+    background-image: url(/imagens/img/background-auth.png);
+    background-repeat: no-repeat ;
+    background-size: cover;
 }
 
 header {
 
     width: 100%;
     height: 100px;
-    background-color: #23282B;
+    background-color: var(--cinza-principal);
     margin:  auto;
     font-family: "poppins", sans-serif;
 }
@@ -53,7 +73,7 @@ header {
     font-size: 14px;
     font-weight: 250;
     line-height: 100%;
-    color: #ffffff;
+    color: var(--branco);
 }
 
 #header_login {
@@ -71,8 +91,8 @@ header {
     justify-content: center;
     width: 130px;
     height: 40px;
-    color: white;
-    background-color: #DD7B02;
+    color: var(--branco);
+    background-color: var(--laranja-primario);
     border-radius: 13px;
     border: 0px;
     font-size: 18px;
@@ -82,7 +102,7 @@ header {
 #header_login_subtittle {
     font-size: 10px;
     text-decoration: none;
-    color: white; 
+    color: var(--branco); 
 }
 
 #nav_menu {
@@ -90,7 +110,7 @@ header {
     justify-content: space-between;
     width: 100%;
     height: 50px;
-    background-color: #DD7B02;
+    background-color: var(--laranja-primario);
     align-items: center;
 }
 
@@ -98,3 +118,116 @@ header {
     padding: 25px;
 }
 
+ /* Login Page */ 
+
+#container-auth {
+    display: flex;
+    flex-direction: row;
+    max-width: 1400px;
+    height: 990px;
+    align-items: center;
+    border: solid 2px green;
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+
+#container-left-img {
+    width: 700px;
+    height: 900px;
+    display: block;
+}
+
+#container-left, #container-right {
+    position: relative;
+    overflow: hidden;
+}
+
+#container-right {
+    display: flex;
+    width: 700px;
+    height: 900px;
+    background-color: var(--cinza-principal);
+    align-items: center;
+}
+
+#container-auth-logoOverlay {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: auto;
+    z-index: 2;
+}
+
+#container-login-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    color: var(--branco);
+    font-family: "poppins", sans-serif;  gap: 30px;
+}
+
+#login-form-h2 {
+    position: absolute;
+    top: 40px;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+ 
+
+ /* Footer */ 
+
+footer {
+    width: 100%;
+    height: 320px;
+    background-color: var(--cinza-principal);
+    display: flex;
+}
+
+#footer_container {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: "poppins",sans-serif;
+
+    
+
+}
+
+#footer_nav {
+
+    width: 100%;
+    height: 250px;
+    border: solid 1px black;
+
+
+}
+
+#footer_logo {
+
+    width: 100%;
+    height: 90px;
+    border: solid 1px black;
+}
+
+#Footer_rights {
+
+    text-align:  center;
+    width: 100%;
+    height: 40px;
+    border: solid 1px black;
+    background-color: var(--laranja-primario);
+    color: var(--branco);
+}
+
+#footer_rights p {
+
+    text-align: center;
+    
+}
