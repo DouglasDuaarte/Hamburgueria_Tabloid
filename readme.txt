@@ -1,5 +1,7 @@
 # Hamburgueria Tabloid
 
+## Projeto pausado para finalizar tarefas da faculdade
+
 Bem-vindo ao projeto da **Hamburgueria Tabloid**!
 
 Este site foi desenvolvido como inspiração para uma hamburgueria local do bairro Restinga Nova, em Porto Alegre. A Tabloid é conhecida por seus hambúrgueres criativos, cada um homenageando um herói ou vilão dos quadrinhos e filmes.
